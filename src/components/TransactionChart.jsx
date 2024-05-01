@@ -4,70 +4,70 @@ import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsive
 const data = [
 	{
 		name: 'Jan',
-		Expense: 4000,
-		Income: 2400
+		MinCashback: 4000,
+		MaxCashback: 2400
 	},
 	{
 		name: 'Feb',
-		Expense: 3000,
-		Income: 1398
+		MinCashback: 3000,
+		MaxCashback: 1398
 	},
 	{
 		name: 'Mar',
-		Expense: 2000,
-		Income: 9800
+		MinCashback: 2000,
+		MaxCashback: 9800
 	},
 	{
 		name: 'Apr',
-		Expense: 2780,
-		Income: 3908
+		MinCashback: 2780,
+		MaxCashback: 3908
 	},
 	{
 		name: 'May',
-		Expense: 1890,
-		Income: 4800
+		MinCashback: 1890,
+		MaxCashback: 4800
 	},
 	{
 		name: 'Jun',
-		Expense: 2390,
-		Income: 3800
+		MinCashback: 2390,
+		MaxCashback: 3800
 	},
 	{
 		name: 'July',
-		Expense: 3490,
-		Income: 4300
+		MinCashback: 3490,
+		MaxCashback: 4300
 	},
 	{
 		name: 'Aug',
-		Expense: 2000,
-		Income: 9800
+		MinCashback: 2000,
+		MaxCashback: 9800
 	},
 	{
 		name: 'Sep',
-		Expense: 2780,
-		Income: 3908
+		MinCashback: 2780,
+		MaxCashback: 3908
 	},
 	{
 		name: 'Oct',
-		Expense: 1890,
-		Income: 4800
+		MinCashback: 1890,
+		MaxCashback: 4800
 	},
 	{
 		name: 'Nov',
-		Expense: 2390,
-		Income: 3800
+		MinCashback: 2390,
+		MaxCashback: 3800
 	},
 	{
 		name: 'Dec',
-		Expense: 3490,
-		Income: 4300
+		MinCashback: 3490,
+		MaxCashback: 4300
 	}
 ]
 
 export default function TransactionChart() {
 	return (
 		<div className="h-[22rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col flex-1">
-			<strong className="text-gray-700 font-medium">Transactions</strong>
+			<strong className="text-gray-700 font-medium"></strong>
 			<div className="mt-3 w-full flex-1 text-xs">
 				<ResponsiveContainer width="100%" height="100%">
 					<BarChart
@@ -86,8 +86,8 @@ export default function TransactionChart() {
 						<YAxis />
 						<Tooltip />
 						<Legend />
-						<Bar dataKey="Income" fill="#0ea5e9" />
-						<Bar dataKey="Expense" fill="#ea580c" />
+						<Bar dataKey="MaxCashback" fill="#0ea5e9" />
+						<Bar dataKey="MinCashback" fill="#ea580c" />
 					</BarChart>
 				</ResponsiveContainer>
 			</div>
